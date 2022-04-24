@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -48,7 +49,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Wwb-2A-kQM">
                     <connections>
-                        <segue destination="qJL-Dz-3BE" kind="presentation" modalPresentationStyle="fullScreen" id="6MR-8T-pWu"/>
+                        <segue destination="8iW-qf-5Uq" kind="presentation" modalPresentationStyle="fullScreen" id="8Dy-kU-AjR"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -59,29 +60,29 @@
             <objects>
                 <viewController id="9LC-jK-z9x" customClass="Settings" customModule="elementalPeriodicTable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3gP-P1-VeC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="prompt with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRF-wJ-KyV">
-                                <rect key="frame" x="133" y="228" width="125" height="28"/>
+                                <rect key="frame" x="133" y="145" width="125" height="28"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="25"/>
                                 <color key="textColor" name="DarkestGreen"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="answer with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iz-2X-xn4">
-                                <rect key="frame" x="133" y="345" width="125" height="28"/>
+                                <rect key="frame" x="133" y="262" width="125" height="28"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="25"/>
                                 <color key="textColor" name="DarkestGreen"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blocks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joz-3T-0OJ">
-                                <rect key="frame" x="51" y="462" width="288" height="28"/>
+                                <rect key="frame" x="51" y="379" width="288" height="28"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="25"/>
                                 <color key="textColor" name="DarkestGreen"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s-block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUZ-pt-SPz">
-                                <rect key="frame" x="71" y="505" width="74" height="31"/>
+                                <rect key="frame" x="71" y="422" width="74" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="I1c-Op-vUA"/>
                                 </constraints>
@@ -90,7 +91,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cls-gr-aST">
-                                <rect key="frame" x="189" y="505" width="131" height="32"/>
+                                <rect key="frame" x="189" y="422" width="131" height="32"/>
                                 <color key="backgroundColor" name="DarkestGreen"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="6RP-uE-kd6"/>
@@ -103,7 +104,7 @@
                                 <color key="selectedSegmentTintColor" name="Grey"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="p-block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krP-Yz-CxJ">
-                                <rect key="frame" x="71" y="546" width="77" height="31"/>
+                                <rect key="frame" x="71" y="463" width="77" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="dFc-KG-Cqw"/>
                                 </constraints>
@@ -112,7 +113,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kum-MM-C4C">
-                                <rect key="frame" x="189" y="546" width="131" height="32"/>
+                                <rect key="frame" x="189" y="463" width="131" height="32"/>
                                 <color key="backgroundColor" name="DarkestGreen"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="8DF-E7-8ba"/>
@@ -125,7 +126,7 @@
                                 <color key="selectedSegmentTintColor" name="Grey"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="d-block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiT-P8-goZ">
-                                <rect key="frame" x="71" y="587" width="77" height="31"/>
+                                <rect key="frame" x="71" y="504" width="77" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="h3l-66-YM5"/>
                                 </constraints>
@@ -134,7 +135,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lqW-eB-D7R">
-                                <rect key="frame" x="189" y="587" width="131" height="32"/>
+                                <rect key="frame" x="189" y="504" width="131" height="32"/>
                                 <color key="backgroundColor" name="DarkestGreen"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="Goc-96-czt"/>
@@ -147,7 +148,7 @@
                                 <color key="selectedSegmentTintColor" name="Grey"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f-block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Cm-FE-xHw">
-                                <rect key="frame" x="71" y="628" width="73" height="31"/>
+                                <rect key="frame" x="71" y="545" width="73" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="qan-gH-G7B"/>
                                 </constraints>
@@ -156,7 +157,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-iK-Pxz">
-                                <rect key="frame" x="189" y="628" width="131" height="32"/>
+                                <rect key="frame" x="189" y="545" width="131" height="32"/>
                                 <color key="backgroundColor" name="DarkestGreen"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="g48-7C-sEe"/>
@@ -169,7 +170,7 @@
                                 <color key="selectedSegmentTintColor" name="Grey"/>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7CM-5I-fcX">
-                                <rect key="frame" x="26" y="381" width="338" height="32"/>
+                                <rect key="frame" x="26" y="298" width="338" height="32"/>
                                 <color key="backgroundColor" name="DarkestGreen"/>
                                 <segments>
                                     <segment title="symbol"/>
@@ -179,7 +180,7 @@
                                 <color key="selectedSegmentTintColor" name="Grey"/>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bra-CN-hQP">
-                                <rect key="frame" x="26" y="264" width="338" height="32"/>
+                                <rect key="frame" x="26" y="181" width="338" height="32"/>
                                 <color key="backgroundColor" name="DarkestGreen"/>
                                 <segments>
                                     <segment title="symbol"/>
@@ -188,37 +189,32 @@
                                 </segments>
                                 <color key="selectedSegmentTintColor" name="Grey"/>
                             </segmentedControl>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZu-YB-INP">
-                                <rect key="frame" x="0.0" y="69" width="390" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpF-Jx-KoM">
+                                <rect key="frame" x="93" y="616" width="204" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="jzu-5U-TAW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="enter">
+                                    <fontDescription key="titleFontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="50"/>
+                                    <color key="baseForegroundColor" name="Grey"/>
+                                    <color key="baseBackgroundColor" name="DarkestGreen"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="8iW-qf-5Uq" kind="presentation" modalPresentationStyle="fullScreen" id="Jjm-9E-g7W"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kA-F7-XWL">
+                                <rect key="frame" x="0.0" y="12" width="390" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="DarkestGreen"/>
                                 <color key="barTintColor" name="Grey"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="20"/>
-                                    <color key="textColor" name="Grey"/>
-                                </textAttributes>
-                                <textAttributes key="largeTitleTextAttributes">
-                                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="20"/>
-                                    <color key="textColor" name="Grey"/>
+                                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="30"/>
+                                    <color key="textColor" name="DarkestGreen"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="settings" id="4xO-zV-vBy"/>
+                                    <navigationItem title="settings" id="UxP-vX-mGU"/>
                                 </items>
-                                <navigationBarAppearance key="standardAppearance">
-                                    <color key="backgroundColor" name="Grey"/>
-                                    <color key="shadowColor" name="DarkestGreen"/>
-                                    <barButtonItemAppearance key="doneButtonAppearance">
-                                        <barButtonItemStateAppearance key="normal">
-                                            <textAttributes key="titleTextAttributes">
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="1"/>
-                                                <color key="textColor" name="Grey"/>
-                                            </textAttributes>
-                                        </barButtonItemStateAppearance>
-                                        <barButtonItemStateAppearance key="highlighted"/>
-                                        <barButtonItemStateAppearance key="disabled"/>
-                                        <barButtonItemStateAppearance key="focused"/>
-                                    </barButtonItemAppearance>
-                                </navigationBarAppearance>
                             </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GLW-V0-Xgc"/>
@@ -229,6 +225,7 @@
                             <constraint firstItem="7CM-5I-fcX" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="26" id="3zm-hK-J8X"/>
                             <constraint firstItem="hB6-iK-Pxz" firstAttribute="top" secondItem="lqW-eB-D7R" secondAttribute="bottom" constant="10" id="7Ef-La-2QF"/>
                             <constraint firstItem="lqW-eB-D7R" firstAttribute="leading" secondItem="oiT-P8-goZ" secondAttribute="trailing" constant="41" id="8Sa-kd-8zY"/>
+                            <constraint firstItem="PpF-Jx-KoM" firstAttribute="top" secondItem="4Cm-FE-xHw" secondAttribute="bottom" constant="40" id="8g6-jm-zEL"/>
                             <constraint firstItem="cls-gr-aST" firstAttribute="top" secondItem="joz-3T-0OJ" secondAttribute="bottom" constant="15" id="9XL-QH-Mle"/>
                             <constraint firstItem="QRF-wJ-KyV" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="133" id="D44-pn-W9Y"/>
                             <constraint firstItem="joz-3T-0OJ" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="51" id="EDY-v0-He6"/>
@@ -237,6 +234,7 @@
                             <constraint firstItem="bra-CN-hQP" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="26" id="Mq8-5M-bgu"/>
                             <constraint firstItem="krP-Yz-CxJ" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="71" id="NJD-wi-adB"/>
                             <constraint firstItem="4Cm-FE-xHw" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="71" id="QNv-10-UAL"/>
+                            <constraint firstItem="PpF-Jx-KoM" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="93" id="QXe-7a-TF8"/>
                             <constraint firstItem="krP-Yz-CxJ" firstAttribute="top" secondItem="wUZ-pt-SPz" secondAttribute="bottom" constant="10" id="U3G-IU-bdd"/>
                             <constraint firstItem="7CM-5I-fcX" firstAttribute="top" secondItem="5iz-2X-xn4" secondAttribute="bottom" constant="8" id="W5k-8Y-VBM"/>
                             <constraint firstItem="GLW-V0-Xgc" firstAttribute="trailing" secondItem="QRF-wJ-KyV" secondAttribute="trailing" constant="132" id="Ynb-oW-4g7"/>
@@ -252,12 +250,13 @@
                             <constraint firstItem="4Cm-FE-xHw" firstAttribute="top" secondItem="oiT-P8-goZ" secondAttribute="bottom" constant="10" id="l8M-zm-Q27"/>
                             <constraint firstItem="oiT-P8-goZ" firstAttribute="top" secondItem="krP-Yz-CxJ" secondAttribute="bottom" constant="10" id="lpN-92-Plb"/>
                             <constraint firstItem="kum-MM-C4C" firstAttribute="top" secondItem="cls-gr-aST" secondAttribute="bottom" constant="10" id="mmL-cg-hyI"/>
-                            <constraint firstItem="bra-CN-hQP" firstAttribute="top" secondItem="GLW-V0-Xgc" secondAttribute="top" constant="176" id="ndM-Mm-3ds"/>
+                            <constraint firstItem="bra-CN-hQP" firstAttribute="top" secondItem="GLW-V0-Xgc" secondAttribute="top" constant="125" id="ndM-Mm-3ds"/>
                             <constraint firstItem="GLW-V0-Xgc" firstAttribute="trailing" secondItem="bra-CN-hQP" secondAttribute="trailing" constant="26" id="oMt-EK-x5X"/>
                             <constraint firstItem="hB6-iK-Pxz" firstAttribute="leading" secondItem="4Cm-FE-xHw" secondAttribute="trailing" constant="45" id="p5t-SZ-fg9"/>
                             <constraint firstItem="GLW-V0-Xgc" firstAttribute="trailing" secondItem="lqW-eB-D7R" secondAttribute="trailing" constant="70" id="ugt-ud-3dh"/>
                             <constraint firstItem="oiT-P8-goZ" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="71" id="unX-JA-TK5"/>
                             <constraint firstItem="5iz-2X-xn4" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="133" id="wvC-7U-UR5"/>
+                            <constraint firstItem="GLW-V0-Xgc" firstAttribute="trailing" secondItem="PpF-Jx-KoM" secondAttribute="trailing" constant="93" id="xBA-GJ-hsD"/>
                             <constraint firstItem="wUZ-pt-SPz" firstAttribute="leading" secondItem="GLW-V0-Xgc" secondAttribute="leading" constant="71" id="xhz-9t-2pc"/>
                             <constraint firstItem="GLW-V0-Xgc" firstAttribute="trailing" secondItem="hB6-iK-Pxz" secondAttribute="trailing" constant="70" id="z8r-m1-eDr"/>
                         </constraints>
@@ -266,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9T-fe-d2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706.1538461538462" y="70.379146919431278"/>
+            <point key="canvasLocation" x="1705" y="-156"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CMf-sR-kvS">
@@ -275,22 +274,50 @@
                     <view key="view" contentMode="scaleToFill" id="Man-ZE-uhx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-PN-2l4">
+                                <rect key="frame" x="16" y="755" width="63" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="info" imagePadding="3">
+                                    <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
+                                    <fontDescription key="titleFontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="25"/>
+                                    <color key="baseForegroundColor" name="Grey"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-ur-dqh">
+                                <rect key="frame" x="271" y="763" width="119" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="settings" imagePadding="3">
+                                    <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
+                                    <fontDescription key="titleFontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="25"/>
+                                    <color key="baseForegroundColor" name="Grey"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qJL-Dz-3BE" kind="show" id="uTf-ol-6zD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="21D-ut-RBV"/>
                         <color key="backgroundColor" name="DarkestGreen"/>
+                        <color key="tintColor" name="Grey"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="hLO-nU-vWZ">
+                        <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="TnP-jp-rga"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hm6-9H-kte" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2503.0769230769229" y="70.379146919431278"/>
+            <point key="canvasLocation" x="867.69230769230762" y="593.60189573459718"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LBT-a3-1zq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qJL-Dz-3BE" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="bfV-iS-n2g"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UnX-Qt-d5N">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -300,10 +327,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EHv-UI-KHq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.92307692307691" y="70.379146919431278"/>
+            <point key="canvasLocation" x="869" y="-155"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jjm-9E-g7W"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <namedColor name="DarkestGreen">
             <color red="0.20392156862745098" green="0.30588235294117649" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
