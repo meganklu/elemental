@@ -16,7 +16,7 @@ class Settings: UIViewController {
             }
     init() {
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(#588157)], for: .selected)
-        UISegmentedControl.appearance().setTitleTextAttributes([.font: UIFont(coder: "TimesNewRoman")], for: .selected)
+        UISegmentedControl.appearance().setTitleTextAttributes([.font: UIFont("TimesNewRoman")], for: .selected)
     }
     
     required init?(coder: NSCoder) {
