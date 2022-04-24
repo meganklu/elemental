@@ -1,26 +1,18 @@
 //
-//  Settings.swift
+//  QuizView.swift
 //  elementalPeriodicTable
 //
-//  Created by Megan Lu on 4/23/22.
+//  Created by Megan Lu on 4/24/22.
 //
 
 import UIKit
 
-class Settings: UIViewController {
+class QuizView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-            }
-    init() {
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(#588157)], for: .selected)
-        UISegmentedControl.appearance().setTitleTextAttributes([.font: UIFont(coder: "TimesNewRoman")], for: .selected)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
 

@@ -169,7 +169,7 @@
                                 <color key="tintColor" name="Grey"/>
                                 <color key="selectedSegmentTintColor" name="Grey"/>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7CM-5I-fcX">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="7CM-5I-fcX">
                                 <rect key="frame" x="26" y="298" width="338" height="32"/>
                                 <color key="backgroundColor" name="DarkestGreen"/>
                                 <segments>
@@ -267,39 +267,56 @@
             </objects>
             <point key="canvasLocation" x="1705" y="-156"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View-->
         <scene sceneID="CMf-sR-kvS">
             <objects>
-                <viewController id="8iW-qf-5Uq" sceneMemberID="viewController">
+                <viewController id="8iW-qf-5Uq" customClass="QuizView" customModule="elementalPeriodicTable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Man-ZE-uhx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-PN-2l4">
-                                <rect key="frame" x="16" y="755" width="63" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="info" imagePadding="3">
-                                    <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
-                                    <fontDescription key="titleFontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="25"/>
-                                    <color key="baseForegroundColor" name="Grey"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-ur-dqh">
-                                <rect key="frame" x="271" y="763" width="119" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-ur-dqh">
+                                <rect key="frame" x="289.33333333333331" y="748.33333333333337" width="100.66666666666669" height="61.666666666666629"/>
                                 <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="settings" imagePadding="3">
                                     <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
                                     <fontDescription key="titleFontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="25"/>
                                     <color key="baseForegroundColor" name="Grey"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="qJL-Dz-3BE" kind="show" id="uTf-ol-6zD"/>
+                                    <segue destination="qJL-Dz-3BE" kind="show" id="sZb-Lf-fUZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caesium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G0-40-bQ8">
+                                <rect key="frame" x="108" y="394" width="175" height="56"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="50"/>
+                                <color key="textColor" name="Grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-PN-2l4">
+                                <rect key="frame" x="0.0" y="748" width="63" height="62"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="info" imagePadding="3">
+                                    <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
+                                    <fontDescription key="titleFontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="25"/>
+                                    <color key="baseForegroundColor" name="Grey"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="tiN-LB-WpA" kind="show" id="Jfc-S3-dgQ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="21D-ut-RBV"/>
                         <color key="backgroundColor" name="DarkestGreen"/>
                         <color key="tintColor" name="Grey"/>
+                        <constraints>
+                            <constraint firstItem="5G0-40-bQ8" firstAttribute="top" secondItem="21D-ut-RBV" secondAttribute="top" constant="350" id="QaQ-Ol-Y7w"/>
+                            <constraint firstItem="QU4-PN-2l4" firstAttribute="leading" secondItem="21D-ut-RBV" secondAttribute="leading" id="XjD-9B-2yh"/>
+                            <constraint firstItem="5G0-40-bQ8" firstAttribute="leading" secondItem="21D-ut-RBV" secondAttribute="leading" constant="108" id="Yxz-rO-FGU"/>
+                            <constraint firstItem="21D-ut-RBV" firstAttribute="bottom" secondItem="5G0-40-bQ8" secondAttribute="bottom" constant="360" id="fRI-ya-6OX"/>
+                            <constraint firstItem="21D-ut-RBV" firstAttribute="trailing" secondItem="5G0-40-bQ8" secondAttribute="trailing" constant="107" id="hNx-bb-NTC"/>
+                            <constraint firstItem="GeM-ur-dqh" firstAttribute="bottom" secondItem="21D-ut-RBV" secondAttribute="bottom" id="iSL-fR-MqF"/>
+                            <constraint firstItem="QU4-PN-2l4" firstAttribute="bottom" secondItem="21D-ut-RBV" secondAttribute="bottom" id="lFf-IH-fgy"/>
+                            <constraint firstItem="GeM-ur-dqh" firstAttribute="trailing" secondItem="21D-ut-RBV" secondAttribute="trailing" id="z5E-g9-SSX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="hLO-nU-vWZ">
                         <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
@@ -329,8 +346,59 @@
             </objects>
             <point key="canvasLocation" x="869" y="-155"/>
         </scene>
+        <!--Info-->
+        <scene sceneID="BDE-Rx-bNY">
+            <objects>
+                <viewController id="9QA-L6-d2S" customClass="info" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZyG-bg-Jko">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxW-ZK-uix">
+                                <rect key="frame" x="0.0" y="12" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" name="Grey"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="30"/>
+                                    <color key="textColor" name="DarkestGreen"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="info" id="U6i-Zf-AMy"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X7W-fv-g0o"/>
+                        <color key="backgroundColor" name="Grey"/>
+                        <color key="tintColor" name="DarkestGreen"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Px-p8-lOd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2x-cV-EPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2924.6153846153843" y="578.67298578199052"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="awi-MM-v4Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tiN-LB-WpA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="dgB-Ma-SG6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gCc-dx-0Ft">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9QA-L6-d2S" kind="relationship" relationship="rootViewController" id="iXC-S7-n2m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Apx-0v-rdd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2091" y="580"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="sZb-Lf-fUZ"/>
         <segue reference="Jjm-9E-g7W"/>
     </inferredMetricsTieBreakers>
     <resources>
