@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5708FFA0281E264A00CC184F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5708FF9F281E264A00CC184F /* SettingsView.swift */; };
 		57E676BE2814F342006FD47B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E676BD2814F342006FD47B /* AppDelegate.swift */; };
 		57E676C02814F342006FD47B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E676BF2814F342006FD47B /* SceneDelegate.swift */; };
 		57E676C22814F342006FD47B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E676C12814F342006FD47B /* ViewController.swift */; };
@@ -18,7 +19,6 @@
 		57E676E22814F347006FD47B /* elementalPeriodicTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E676E12814F347006FD47B /* elementalPeriodicTableUITests.swift */; };
 		57E676E42814F347006FD47B /* elementalPeriodicTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E676E32814F347006FD47B /* elementalPeriodicTableUITestsLaunchTests.swift */; };
 		57E676F12814F898006FD47B /* LaunchScreenCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E676F02814F897006FD47B /* LaunchScreenCode.swift */; };
-		57E676F32815002D006FD47B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E676F22815002D006FD47B /* Settings.swift */; };
 		57E676F528153472006FD47B /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E676F428153471006FD47B /* QuizView.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5708FF9F281E264A00CC184F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		57E676BA2814F342006FD47B /* elementalPeriodicTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elementalPeriodicTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E676BD2814F342006FD47B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57E676BF2814F342006FD47B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		57E676E12814F347006FD47B /* elementalPeriodicTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elementalPeriodicTableUITests.swift; sourceTree = "<group>"; };
 		57E676E32814F347006FD47B /* elementalPeriodicTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elementalPeriodicTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		57E676F02814F897006FD47B /* LaunchScreenCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenCode.swift; sourceTree = "<group>"; };
-		57E676F22815002D006FD47B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		57E676F428153471006FD47B /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,12 +107,12 @@
 		57E676BC2814F342006FD47B /* elementalPeriodicTable */ = {
 			isa = PBXGroup;
 			children = (
+				5708FF9F281E264A00CC184F /* SettingsView.swift */,
 				57E676BD2814F342006FD47B /* AppDelegate.swift */,
 				57E676BF2814F342006FD47B /* SceneDelegate.swift */,
 				57E676C12814F342006FD47B /* ViewController.swift */,
 				57E676C32814F342006FD47B /* Main.storyboard */,
 				57E676F428153471006FD47B /* QuizView.swift */,
-				57E676F22815002D006FD47B /* Settings.swift */,
 				57E676F02814F897006FD47B /* LaunchScreenCode.swift */,
 				57E676C92814F346006FD47B /* Assets.xcassets */,
 				57E676CB2814F346006FD47B /* LaunchScreen.storyboard */,
@@ -270,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57E676F32815002D006FD47B /* Settings.swift in Sources */,
+				5708FFA0281E264A00CC184F /* SettingsView.swift in Sources */,
 				57E676C22814F342006FD47B /* ViewController.swift in Sources */,
 				57E676C82814F342006FD47B /* elementalPeriodicTable.xcdatamodeld in Sources */,
 				57E676F12814F898006FD47B /* LaunchScreenCode.swift in Sources */,
